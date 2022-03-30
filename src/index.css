@@ -31,7 +31,7 @@ h2 {
 input,
 select {
   padding: 15px;
-  width: 500px;
+  width: clamp(500px, 500px, 100vw);
   border: none;
   border-bottom: 2px solid grey;
   text-align: center;
@@ -66,6 +66,6 @@ button:hover {
 
 .member {
   border-bottom: 2px solid grey;
-  width: 500px;
+  width: clamp(500px, 500px, 100vw);
   margin-bottom: 10px;
 }
