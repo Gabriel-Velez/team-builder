@@ -35,7 +35,7 @@ function App() {
     };
 
     if (!newMember.name) {
-      setFormError("Please Check Username");
+      setFormError("Please Check Name");
       return;
     } else if (!newMember.email) {
       setFormError("Please Check Email");
