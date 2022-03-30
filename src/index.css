@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Jost", sans-serif;
+  padding: 30px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+input,
+select {
+  padding: 15px;
+  width: 50%;
+  border: none;
+  border-bottom: 2px solid grey;
+}
+select {
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+
+button {
+  border-radius: 10px;
+  padding: 10px 35px;
+  background-color: #20d34a;
+  color: white;
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.25s background-color;
+}
+
+button:hover {
+  background-color: #1baf3e;
+}
+
+.error {
+  color: red;
+}
+
+.member {
+  border-bottom: 2px solid grey;
+  width: 50%;
+}
