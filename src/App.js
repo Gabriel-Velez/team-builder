@@ -5,7 +5,7 @@ import Member from "./components/Member";
 import Form from "./components/Form";
 
 const initialFormValues = {
-  username: "",
+  name: "",
   email: "",
   role: "",
 };
@@ -51,13 +51,13 @@ function App() {
 
   return (
     <>
+      <h1>Enter Team Memeber</h1>
+      <Form values={formValues} update={updateForm} submit={submitForm} />
+      {formError && <h3 className='error'>{formError}</h3>}
       <h1>Team Memebers</h1>
       {teamMemebers.map((member, idx) => {
         return <Member details={member} key={idx} />;
       })}
-      <h1>Enter Team Memeber</h1>
-      <Form values={formValues} update={updateForm} submit={submitForm} />
-      {formError && <h3 className='error'>{formError}</h3>}
     </>
   );
 }
