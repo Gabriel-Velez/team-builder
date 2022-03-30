@@ -47,6 +47,7 @@ function App() {
 
     setTeamMembers([newMember, ...teamMemebers]);
     setFormValues(initialFormValues);
+    setFormError("");
   };
 
   return (
